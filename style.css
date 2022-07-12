@@ -1,0 +1,146 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 5vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 15vh;
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+}
+
+.ceiling{
+    grid-column: 2/10;
+    grid-row: 1;
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr;
+}
+
+.ceilingLight1{
+    height: 1vh;
+    background-color: #f3172d;
+    grid-row: 1;
+    opacity: 1;
+    border-radius: 70%;
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(248, 21, 21, 0.75);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(248, 21, 21, 0.75);
+    box-shadow: 0px 0px 15px 5px rgba(248, 21, 21, 0.75);
+    animation: shine 1s ease-in-out infinite;
+
+}
+
+.ceilingLight2{
+    height: 1vh;
+    background-color: #0096FF;
+    grid-row: 2;
+    border-radius: 70%;
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(1, 132, 255, 0.75);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(1, 132, 255, 0.75);
+    box-shadow: 0px 0px 15px 5px rgba(1, 132, 255, 0.75);
+    animation: shine 1s ease-in-out infinite;
+}
+
+@keyframes shine{
+    10% {
+      opacity: 1;
+      top: -30%;
+      left: -30%;
+      transition-property: left, top, opacity;
+      transition-duration: 5s;
+      transition-timing-function: ease;
+    }
+    100% {
+      opacity: 0.8;
+      top: -30%;
+      left: -30%;
+      transition-property: left, top, opacity;
+    }
+  }
+
+
+
+  .concessionBackDrop{
+    grid-column: 2/10;
+    grid-row: 2/6;
+    border-radius: 1%;
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+
+  .concessionPoster{
+      grid-row: 1/4;
+      grid-column: 9/10;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  }
+
+  .nowShowing{
+      grid-column: 8/10;
+      text-align: center;
+      color: #0096FF;
+  }
+
+
+  #poster1, #poster3{
+      border: 3px solid  #0096FF;
+      grid-row: 2/10;
+      animation: shine 1s ease-in-out infinite;
+  }
+  #poster2, #poster4{
+    border: 3px solid  #f3172d;
+    grid-row: 2/10;
+    animation: shine 1s ease-in-out infinite;
+}
+
+
+
+  .concessionDesk{
+      background-color: #966F33;
+      grid-column: 3/9;
+      grid-row: 6/10;
+      border-radius: 5%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  
+
+  .candy, .candy2{
+      opacity: 0.7;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+      box-shadow:
+    inset 0 0 50px #fff,      /* inner white */
+    inset 20px 0 80px #fff,   /* inner left magenta short */
+    inset -20px 0 80px #fff,  /* inner right cyan short */
+    inset 20px 0 300px #fff,  /* inner left magenta broad */
+    inset -20px 0 300px #fff, /* inner right cyan broad */
+    0 0 50px #fff,            /* outer white */
+    -5px 0 80px #fff,        /* outer left magenta */
+    5px 0 80px #fff;         /* outer right cyan */
+  }
+
+  .candy{
+    grid-column: 3/5;
+    grid-row: 2/10;
+  }
+
+  .candy2{
+      grid-column: 7/9;
+      grid-row: 2/10;
+  }
+
+  .candyBar{
+      grid-column: 3;
+      grid-row: 2/4;
+      background-color: brown;
+      opacity: 1;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+  }
+
+  
+
+ 
